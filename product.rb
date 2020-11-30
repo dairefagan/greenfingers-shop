@@ -3,7 +3,7 @@ class Product
   attr_reader :name, :net_price, :count
 
   def initialize(name, net_price, count)
-    @name, @net_price, @count = name, net_price.round(2), count
+    @name, @net_price, @count = name, net_price, count
   end
 
   def gross_price
