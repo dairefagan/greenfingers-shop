@@ -26,6 +26,6 @@ class ShopTest < Test::Unit::TestCase
   end
 
   def test_total_net
-    assert_equal("€2130.00", @shop_1.total_net, "total_net does not return €2130.00")
+    assert_equal(2130, @shop_1.total_net, "total_net does not return 2130.00")
   end
 end

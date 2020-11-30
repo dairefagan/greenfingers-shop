@@ -1,5 +1,4 @@
 class Shop
-
   attr_reader :name
 
   def initialize(name)
@@ -8,13 +7,13 @@ class Shop
   end
 
   def add_product(product)
-    @products_stock.push (product)
+    @products_stock.push(product)
   end
 
   def total_net
-    net = 0.00
+    net = 0
     @products_stock.each { |product| net += product.net_price * product.count }
-    "€" + sprintf("%.2f", net)
+    net
   end
 
   def to_s
@@ -23,5 +22,4 @@ class Shop
     @products_stock.each { |product| str += "#{product.name} €" + sprintf("%.2f", product.gross_price) + " \n" }
     str
   end
-
 end
