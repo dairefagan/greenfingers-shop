@@ -23,6 +23,6 @@ class ProductTest < Test::Unit::TestCase
   end
 
   def test_gross_price
-    assert_equal(11, @product_1.gross_price, "gross price is not initialised to 11")
+    assert_equal(11.00, @product_1.gross_price, "gross price is not initialised to 11")
   end
 end
