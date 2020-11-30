@@ -24,4 +24,8 @@ class ShopTest < Test::Unit::TestCase
   def test_to_s
     assert_equal("Book €11.00 \nMagazine €5.50 \nNewspaper €3.30 \n", @shop_1.to_s, "to_s output invalid")
   end
+
+  def test_total_net
+    assert_equal("€2130.00", @shop_1.total_net, "total_net does not return €2130.00")
+  end
 end
