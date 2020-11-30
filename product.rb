@@ -7,7 +7,7 @@ class Product
   end
 
   def gross_price
-    (@net_price * 1.10).round(2)
+    (@net_price * 1.1)
   end
 
 end
