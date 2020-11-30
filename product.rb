@@ -1,6 +1,6 @@
 class Product
 
-  attr_reader :net_price
+  attr_reader :name, :net_price, :count
 
   def initialize(name, net_price, count)
     @name, @net_price, @count = name, net_price, count
