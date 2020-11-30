@@ -20,7 +20,7 @@ class Shop
   def to_s
     @products_stock.sort_by! { |product| product.name }
     str = ""
-    @products_stock.each { |product| str += "#{product.name} €#{product.gross_price} \n" }
+    @products_stock.each { |product| str += "#{product.name} €" + sprintf("%.2f", product.gross_price) + " \n" }
     str
   end
 
