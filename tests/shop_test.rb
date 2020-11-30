@@ -28,4 +28,9 @@ class ShopTest < Test::Unit::TestCase
   def test_total_net
     assert_equal(2130, @shop_1.total_net, "total_net does not return 2130.00")
   end
+
+  def test_average_gross_price
+    assert_equal(6.6, @shop_1.average_gross_price, "average_price does not return 6.30")
+  end
+
 end

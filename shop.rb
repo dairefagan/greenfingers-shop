@@ -16,6 +16,12 @@ class Shop
     net
   end
 
+  def average_gross_price
+    sum = 0.0
+    @products_stock.each { |product| sum += product.gross_price }
+    (sum / @products_stock.count).round(2)
+  end
+
   def to_s
     @products_stock.sort_by! { |product| product.name }
     str = ""
