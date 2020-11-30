@@ -7,7 +7,7 @@ class Product
   end
 
   def gross_price
-    @net_price * 1.10
+    sprintf("%.2f", @net_price * 1.10)
   end
 
 end
