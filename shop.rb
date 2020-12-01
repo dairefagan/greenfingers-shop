@@ -12,7 +12,7 @@ class Shop
 
   def total_net
     net = 0
-    @products_stock.each { |product| net += product.net_price * product.count }
+    @products_stock.each { |product| net += product.net_price_all_items }
     net
   end
 

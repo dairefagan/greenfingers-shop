@@ -10,4 +10,8 @@ class Product
     (@net_price * 1.1)
   end
 
+  def net_price_all_items
+    @net_price * @count
+  end
+
 end
